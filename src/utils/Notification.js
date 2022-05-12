@@ -1,7 +1,8 @@
 /*
  * Copyright 2021 - 2022 José Expósito <jose.exposito89@gmail.com>
- *
- * This file is part of gnome-shell-extension-x11gestures.
+ * Copyright 2022 Ian Santopietro <isantop@gmail.com>
+ * 
+ * This file is part of gnome-shell-extension-popx11gestures.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -22,7 +23,7 @@ const MessageTray = imports.ui.messageTray;
 
 class NotificationClass extends GObject.Object {
   static send(title, text, url) {
-    const source = new MessageTray.Source('X11Gestures', 'dialog-information-symbolic');
+    const source = new MessageTray.Source('popx11gestures', 'dialog-information-symbolic');
     Main.messageTray.add(source);
 
     const notification = new MessageTray.Notification(source, title, text);

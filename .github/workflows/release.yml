@@ -26,13 +26,13 @@ jobs:
 
       - name: Build archive
         run: |
-          zip -r x11gestures@joseexposito.github.io.zip COPYING COPYRIGHT extension.js prefs.js convenience.js metadata.json src schemas
+          zip -r popx11gestures@pop.system76.com.zip COPYING COPYRIGHT extension.js prefs.js convenience.js metadata.json src schemas
 
       - name: Upload archive artifact
         uses: "actions/upload-artifact@v2"
         with:
-          name: "x11gestures@joseexposito.github.io.zip"
-          path: "${{ github.workspace }}/x11gestures@joseexposito.github.io.zip"
+          name: "popx11gestures@pop.system76.com.zip"
+          path: "${{ github.workspace }}/popx11gestures@pop.system76.com.zip"
 
   create-release:
     runs-on: ubuntu-latest
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: "x11gestures@joseexposito.github.io.zip/x11gestures@joseexposito.github.io.zip"
-          asset_name: "x11gestures@joseexposito.github.io.zip"
+          asset_path: "popx11gestures@pop.system76.com.zip/popx11gestures@pop.system76.com.zip"
+          asset_name: "popx11gestures@pop.system76.com.zip"
           asset_content_type: application/zip

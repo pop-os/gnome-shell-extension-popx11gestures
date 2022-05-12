@@ -1,7 +1,8 @@
 /*
  * Copyright 2021 - 2022 José Expósito <jose.exposito89@gmail.com>
- *
- * This file is part of gnome-shell-extension-x11gestures.
+ * Copyright 2022 Ian Santopietro <isantop@gmail.com>
+ * 
+ * This file is part of gnome-shell-extension-popx11gestures.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -45,7 +46,7 @@ class Extension {
       Notification.send(
         'Touchégg is not installed',
         'Please install Touchégg to enable multi-touch gestures',
-        'https://github.com/JoseExposito/touchegg#readme',
+        'https://github.com/isantop/touchegg#readme',
       );
     }
 

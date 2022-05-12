@@ -43,5 +43,5 @@ relevant.
 
 <!--
 Please, make sure to search for similar bug reports before creating one and to read the FAQ:
-https://github.com/JoseExposito/touchegg#faq
+https://github.com/isantop/touchegg#faq
 -->

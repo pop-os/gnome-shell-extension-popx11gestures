@@ -1,7 +1,8 @@
 /*
  * Copyright 2021 - 2022 José Expósito <jose.exposito89@gmail.com>
+ * Copyright 2022 Ian Santopietro <isantop@gmail.com>
  *
- * This file is part of gnome-shell-extension-x11gestures.
+ * This file is part of gnome-shell-extension-popx11gestures.
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -27,7 +28,7 @@ function init() {}
 
 // eslint-disable-next-line no-unused-vars
 function buildPrefsWidget() {
-  this.settings = ExtensionUtils.getSettings('org.gnome.shell.extensions.x11gestures');
+  this.settings = ExtensionUtils.getSettings('org.gnome.shell.extensions.popx11gestures');
 
   // Create a parent widget that we'll return from this function
   const prefsWidget = new Gtk.Grid({

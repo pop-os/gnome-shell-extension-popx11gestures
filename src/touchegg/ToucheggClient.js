@@ -217,12 +217,12 @@ const ToucheggClient = GObject.registerClass({
       const device = parameters.get_child_value(4).get_uint32();
       const time = Date.now();
 
-      // logger.log(signalName);
-      // logger.log(type);
-      // logger.log(direction);
-      // logger.log(percentage);
-      // logger.log(fingers);
-      // logger.log(device);
+      // logger.log(`signalName: ${signalName}`);
+      // logger.log(`type: ${type}`);
+      // logger.log(`direction: ${direction}`);
+      // logger.log(`percentage: ${percentage}`);
+      // logger.log(`fingers: ${fingers}`);
+      // logger.log(`device: ${device}`);
 
       this.emit(signal, type, direction, percentage, fingers, device, time);
     }

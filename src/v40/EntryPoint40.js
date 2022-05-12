@@ -43,7 +43,6 @@ class EntryPoint40Class extends GObject.Object {
 
     const allowedGestures = [
       EntryPoint40Class.hookGlobalSwitchDesktop(cfg),
-      EntryPoint40Class.hookGlobalOverview(cfg),
       EntryPoint40Class.hookActivitiesSwitchDesktop(cfg),
     ];
 
@@ -56,13 +55,13 @@ class EntryPoint40Class extends GObject.Object {
     const allowedGesture = new AllowedGesture(
       GestureType.SWIPE,
       fingers,
-      [GestureDirection.LEFT, GestureDirection.RIGHT],
+      [GestureDirection.UP, GestureDirection.DOWN],
       [DeviceType.TOUCHPAD, DeviceType.TOUCHSCREEN],
     );
 
     const tracker = new SwipeTracker40(
       global.stage,
-      Clutter.Orientation.HORIZONTAL,
+      Clutter.Orientation.VERTICAL,
       Shell.ActionMode.NORMAL,
       { allowDrag: false, allowScroll: false },
       allowedGesture,
@@ -82,8 +81,8 @@ class EntryPoint40Class extends GObject.Object {
     return allowedGesture;
   }
 
-  static hookGlobalOverview({ fingers }) {
-    logger.log('Hooking global activities/overview gestures');
+  static hookActivitiesSwitchDesktop({ fingers }) {
+    logger.log('Hooking activities view switch desktop gestures');
 
     const allowedGesture = new AllowedGesture(
       GestureType.SWIPE,
@@ -93,39 +92,8 @@ class EntryPoint40Class extends GObject.Object {
     );
 
     const tracker = new SwipeTracker40(
-      global.stage,
-      Clutter.Orientation.VERTICAL,
-      Shell.ActionMode.NORMAL | Shell.ActionMode.OVERVIEW, // eslint-disable-line no-bitwise
-      { allowDrag: false, allowScroll: false },
-      allowedGesture,
-    );
-
-    /* eslint-disable no-underscore-dangle */
-    EntryPoint40Class.hook(
-      overview,
-      overview._gestureBegin,
-      overview._gestureUpdate,
-      overview._gestureEnd,
-      tracker,
-    );
-    /* eslint-enable no-underscore-dangle */
-
-    return allowedGesture;
-  }
-
-  static hookActivitiesSwitchDesktop({ fingers }) {
-    logger.log('Hooking activities view switch desktop gestures');
-
-    const allowedGesture = new AllowedGesture(
-      GestureType.SWIPE,
-      fingers,
-      [GestureDirection.LEFT, GestureDirection.RIGHT],
-      [DeviceType.TOUCHPAD, DeviceType.TOUCHSCREEN],
-    );
-
-    const tracker = new SwipeTracker40(
       Main.layoutManager.overviewGroup,
-      Clutter.Orientation.HORIZONTAL,
+      Clutter.Orientation.VERTICAL,
       Shell.ActionMode.OVERVIEW,
       { allowDrag: false, allowScroll: false },
       allowedGesture,

@@ -15,11 +15,6 @@ Enable GNOME Shell multi-touch gestures on X11 with this extension.
 
 <br />
 
-<div align="center">
-
-  Install [Touchégg](https://github.com/JoseExposito/touchegg#readme) and...
-
-  <a href='https://extensions.gnome.org/extension/4033/x11-gestures/'>
-    <img width='240' alt='Download on GNOME Shell Extensions' src='.github/images/get-it-on-ego.svg'/>
-  </a>
-</div>
+This extension is a forked copy of https://github.com/JoseExposito/gnome-shell-extension-x11gestures
+with modifications for use in Pop!_OS with support for vertical workspaces. It 
+allows to have 1:1 workspaces gesture tracking in the default Pop X11 desktop.

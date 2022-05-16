@@ -1,7 +1,7 @@
 /*
  * Copyright 2021 - 2022 José Expósito <jose.exposito89@gmail.com>
  * Copyright 2022 Ian Santopietro <isantop@gmail.com>
- * 
+ *
  * This file is part of gnome-shell-extension-x11gestures.
  *
  * This program is free software: you can redistribute it and/or modify it under

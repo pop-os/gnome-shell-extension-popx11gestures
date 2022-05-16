@@ -137,10 +137,14 @@ class EntryPoint40Class extends GObject.Object {
 
   static unhook(obj) {
     /* eslint-disable no-underscore-dangle, no-param-reassign */
-    obj._toucheggTracker.disconnect(obj._toucheggBegin);
-    obj._toucheggTracker.disconnect(obj._toucheggUpdate);
-    obj._toucheggTracker.disconnect(obj._toucheggEnd);
-    obj._toucheggTracker = null;
+    try {
+      obj._toucheggTracker.disconnect(obj._toucheggBegin);
+      obj._toucheggTracker.disconnect(obj._toucheggUpdate);
+      obj._toucheggTracker.disconnect(obj._toucheggEnd);
+      obj._toucheggTracker = null;
+    } catch (error) {
+      logger.log('No tracker, skipping');
+    }
     /* eslint-enable no-underscore-dangle, no-param-reassign */
   }
 }

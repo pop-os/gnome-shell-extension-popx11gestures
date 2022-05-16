@@ -7,7 +7,7 @@
       <description>
         The number of fingers to use for switching worksapces (default 4). 
         Changing this may result in other gestures breaking.
-      </description
+      </description>
     </key>
   </schema>
 </schemalist>

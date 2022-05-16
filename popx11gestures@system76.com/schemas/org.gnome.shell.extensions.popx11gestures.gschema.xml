@@ -3,11 +3,6 @@
   <schema id="org.gnome.shell.extensions.popx11gestures" path="/org/gnome/shell/extensions/popx11gestures/">
     <key name="swipe-fingers" type="i">
       <default>4</default>
-      <summary>Number of Fingers to use for Workspace Switching Gestures</summary>
-      <description>
-        The number of fingers to use for switching worksapces (default 4). 
-        Changing this may result in other gestures breaking.
-      </description
     </key>
   </schema>
 </schemalist>

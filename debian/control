@@ -1,0 +1,21 @@
+Source: gnome-shell-extension-popx11gestures
+Section: gnome
+Priority: optional
+Maintainer: Ian Santopietro <ian@system76.com>
+Build-Depends: debhelper-compat (= 13), libglib2.0-bin
+Standards-Version: 4.6.0
+Homepage: https://github.com/pop-os/gnome-shell-extension-popx11gestures
+Vcs-Browser: https://github.com/pop-os/gnome-shell-extension-popx11gestures
+Vcs-Git: https://github.com/pop-os/gnome-shell-extension-popx11gestures.git
+
+Package: gnome-shell-extension-popx11gestures
+Architecture: all
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends}, 
+         gnome-shell (>= 40), 
+         touchegg (>= 2.0.12)
+Description: Workspace swtching gesture extension with 1:1 tracking
+ Allows switching workspaces with 1:1 tracking between the animation and the 
+ movement of the gesture. Touchegg is used as a gesture-tracker backend. 
+ Exclusively for X11 systems; Wayland provides 1:1 workspace gesture tracking 
+ in GNOME out of the box.

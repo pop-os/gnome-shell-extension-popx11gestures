@@ -1,11 +1,11 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: gnome-shell-extension-popx11gestures
-Upstream-Contact: <preferred name and address to reach the upstream project>
-Source: <url://example.com>
+Upstream-Name: gnome-shell-extension-pop-x11gestures
+Upstream-Contact: Ian Santopietro <ian@system76.com>
+Source: https://github.com/pop-os/gnome-shell-extension-popx11gestures
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
+Copyright: 2021 - 2022 José Expósito <jose.exposito89@gmail.com>
+           2022 Ian Santopietro <isantop@gmail.com>
 License: GPL-2.0+
 
 Files: debian/*

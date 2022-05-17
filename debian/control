@@ -1,4 +1,4 @@
-Source: gnome-shell-extension-popx11gestures
+Source: gnome-shell-extension-pop-x11gestures
 Section: gnome
 Priority: optional
 Maintainer: Ian Santopietro <ian@system76.com>
@@ -8,7 +8,7 @@ Homepage: https://github.com/pop-os/gnome-shell-extension-popx11gestures
 Vcs-Browser: https://github.com/pop-os/gnome-shell-extension-popx11gestures
 Vcs-Git: https://github.com/pop-os/gnome-shell-extension-popx11gestures.git
 
-Package: gnome-shell-extension-popx11gestures
+Package: gnome-shell-extension-pop-x11gestures
 Architecture: all
 Depends: ${shlibs:Depends}, 
          ${misc:Depends}, 

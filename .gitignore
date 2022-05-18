@@ -57,5 +57,8 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# Build
+popx11gestures@system76.com
+
 # schemas
 schemas/gschemas.compiled

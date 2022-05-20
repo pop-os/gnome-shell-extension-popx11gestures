@@ -1,5 +1,5 @@
 {
-  "name": "pop.system76.com.popx11gestures",
+  "name": "system76.com.popx11gestures",
   "version": "1.0.0",
   "description": "Enable GNOME Shell multi-touch gestures on X11 with this extension",
   "author": "José Expósito",

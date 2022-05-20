@@ -6,7 +6,7 @@ to start testing your changes is to create a symbolic link:
 ```bash
 $ glib-compile-schemas schemas
 $ mkdir -p ~/.local/share/gnome-shell/extensions
-$ ln -s `pwd` ~/.local/share/gnome-shell/extensions/popx11gestures@pop.system76.com
+$ ln -s `pwd` ~/.local/share/gnome-shell/extensions/popx11gestures@system76.com
 ```
 
 And restart GNOME Shell by pressing `Alt+F2` to open the Run Dialog and enter `restart` or `r`.
